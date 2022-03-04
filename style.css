@@ -1,7 +1,7 @@
 :root {
---cor-detalhe-escura: #660000;
---cor-detalhe-media: #990000;
---cor-detalhe-clara: #cc0000;
+--cor-detalhe-escura: #4e0066;
+--cor-detalhe-media: #990099;
+--cor-detalhe-clara: #cc0033;
 
 --cor-neutra-clara: #eeeeee;
 --cor-neutra-media: #888888;
@@ -16,6 +16,7 @@ color: var(--cor-neutra-escura);
 font-size: 16px;
 margin: 0;
 box-sizing: border-box;
+font-family: "roboto", sans-serif;
 }
 
 nav {
@@ -23,6 +24,7 @@ nav {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -30,7 +32,27 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    padding-left: 0.25rem;
+.navlista li {
+    padding-left: 0.5rem;
 }
 
+.titulonav{
+    font-size: 1.5rem;
+    color: var(--cor-neutra-clara);
+    text-decoration: none;
+    font-weight: bold;
+} 
+
+.navlink {
+    text-decoration: none;
+    color: var(--cor-neutra-escura);
+    border-bottom: 3px solid var(--cor-neutra-escura);
+    padding-bottom: 0.4rem;
+    transition: 0.5s;
+}
+
+.navlink:hover {
+    background-color: var(--cor-neutra-clara);
+    color: var(--cor-links);
+    border-bottom: 3px solid var(--cor-links);
+}
