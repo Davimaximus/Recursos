@@ -1,22 +1,22 @@
 :root {
---cor-detalhe-escura: #4e0066;
---cor-detalhe-media: #990099;
---cor-detalhe-clara: #cc0033;
+    --cor-detalhe-escura: #660000;
+    --cor-detalhe-media: #990000;
+    --cor-detalhe-clara: #CC0000;
 
---cor-neutra-clara: #eeeeee;
---cor-neutra-media: #888888;
---cor-neutra-escura: #222222;
+    --cor-neutra-clara: #EEEEEE;
+    --cor-neutra-media: #888888;
+    --cor-neutra-escura: #222222;
 
---cor-links: #ff3300;
+    --cor-links: #FF3300;
 }
 
 body {
-background-color: var(--cor-neutra-clara);
-color: var(--cor-neutra-escura);
-font-size: 16px;
-margin: 0;
-box-sizing: border-box;
-font-family: "roboto", sans-serif;
+    background-color: var(--cor-neutra-clara);
+    color: var(--cor-neutra-escura);
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -36,17 +36,17 @@ nav ul {
     padding-left: 0.5rem;
 }
 
-.titulonav{
+.titulonav {
     font-size: 1.5rem;
     color: var(--cor-neutra-clara);
     text-decoration: none;
     font-weight: bold;
-} 
+}
 
 .navlink {
     text-decoration: none;
-    color: var(--cor-neutra-escura);
-    border-bottom: 3px solid var(--cor-neutra-escura);
+    color: var(--cor-neutra-media);
+    border-bottom: 3px solid var(--cor-detalhe-clara);
     padding-bottom: 0.4rem;
     transition: 0.5s;
 }
@@ -55,4 +55,63 @@ nav ul {
     background-color: var(--cor-neutra-clara);
     color: var(--cor-links);
     border-bottom: 3px solid var(--cor-links);
+}
+
+.area-titulo {
+    background-color: var(--cor-neutra-escura);
+    padding: 1rem;
+}
+
+.titulo-1 {
+    color: var(--cor-neutra-clara);
+}
+
+.titulo-2 {
+    color: var(--cor-detalhe-media);
+}
+
+.conteudo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--cor-detalhe-media);
+    margin: 1rem;
+    clear: both;
+    min-height: 340px;
+}
+
+.foto{
+    width: 480px;
+    height: 270px;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+figcaption{
+    font-size: 12px;
+    font-style: italic;
+    float: left;
+    clear: both;
+}
+.varias{
+    width: 160px;
+    height: 270px;
+    float: left;
+    margin: 0px;
+}
+figure{
+    float: left;
+    margin: 0 15px 5px 0;
+}
+
+.rodape {
+    background-color: var(--cor-detalhe-media);
+    color: var(--cor-neutra-clara);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.texto-rodape {
+    font-size: 1.125rem;
+    padding: 1rem;
 }
